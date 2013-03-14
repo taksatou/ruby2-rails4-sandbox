@@ -1,8 +1,8 @@
 VAGRANT_IP := $(shell cat VAGRANT_IP)
 
 
-.PHONY:
-all::
+.PHONY: up prepare cook
+all:: prepare cook
 
 up:
 	vagrant up
@@ -12,6 +12,3 @@ prepare: up
 
 cook: up
 	knife solo cook vagrant@${VAGRANT_IP}
-
-suspend:
-	vagrant suspend
