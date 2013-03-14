@@ -1,16 +1,14 @@
 {
     "user":{
-        "name": "fiorung2",
-        "group" : "fiorung2",
-        "home": "/home/fiorung2"
+        "name": "vagrant",
+        "group" : "vagrant",
+        "home": "/home/vagrant"
     },
     "rbenv":{
         "version": "2.0.0-p0"
     },
     "recipes":[
-        "adduser",
         "rbenv",
-        "dev",
-        "sysstat"
+        "rails4"
     ]
 }
